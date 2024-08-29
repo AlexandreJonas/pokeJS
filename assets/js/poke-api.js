@@ -30,6 +30,6 @@ PokeApi.GetPokemons = (offset = 0, limit = 20) => {
         .then((jsonBody) => jsonBody.results)
         .then((pokemons) => pokemons.map(PokeApi.getPokemonDetail)) //detailRequests = lista de promessas
         .then((detailRequests) => Promise.all(detailRequests))
-        .then((pokemonDetails) => pokemonDetails) //Pra que esse linha
+        .then((pokemonDetails) => pokemonDetails)
         .catch((error) => console.error(error))
 }

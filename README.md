@@ -1,0 +1,1 @@
+Aplicação básica responsiva de estudo usando a API pokeApi para exibir um determinado número de pokemons
